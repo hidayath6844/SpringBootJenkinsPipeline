@@ -12,7 +12,7 @@ pipeline {
 			steps {
 				script {
 						xcopy ./build/libs/* D:/JenkinsDeployment/
-					java -jar D:/JenkinsDeployment/SpringBootJenkinsPipeline*.jar
+						java -jar D:/JenkinsDeployment/SpringBootJenkinsPipeline*.jar
 				}
 			}
 		}
