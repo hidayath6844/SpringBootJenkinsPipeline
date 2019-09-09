@@ -11,8 +11,8 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-					xcopy .\build\libs\* D:\JenkinsDeployment\
-					java -jar D:\JenkinsDeployment\SpringBootJenkinsPipeline*.jar
+					xcopy ./build/libs/* D:/JenkinsDeployment/
+					java -jar D:/JenkinsDeployment/SpringBootJenkinsPipeline*.jar
 			}
 		}
 	}
