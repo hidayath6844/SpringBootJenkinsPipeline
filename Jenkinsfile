@@ -12,6 +12,7 @@ pipeline {
 			steps {
 				script {
 					cd './build/libs'
+					
 					java -jar SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar
 				}
 			}
