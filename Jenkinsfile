@@ -10,7 +10,7 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-				nohup java -jar ./build/libs/SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar
+				nohup java -jar ./build/libs/SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar &
 			}
 		}
 	}
