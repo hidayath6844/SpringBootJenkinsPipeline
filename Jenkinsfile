@@ -10,8 +10,10 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-				cd './build/libs'
-				java -jar SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar
+				script {
+					cd './build/libs'
+					java -jar SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar
+				}
 			}
 		}
 	}
