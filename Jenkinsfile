@@ -10,7 +10,7 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-				bat 'launch.bat'
+				bat 'start java -jar SpringBootJenkinsPipeline-0.0.1-SNAPSHOT.jar'
 			}
 		}
 	}
