@@ -16,6 +16,6 @@ public class SpringBootJenkinsPipelineApplication {
 	@GetMapping("/JenkinsPipelineTest")
 	public String jenkinsTest()
 	{
-		return "Welcome to Jenkins Pipeline CI/CD.";
+		return "Welcome to Jenkins Pipeline CI/CD test.";
 	}
 }
